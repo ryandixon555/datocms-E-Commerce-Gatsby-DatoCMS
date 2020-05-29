@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Ryan Dixon",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "react-bootstrap": "^1.0.0-beta.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.22.12",
     "gatsby-image": "^2.2.34",
