@@ -5,7 +5,6 @@
   "author": "Ryan Dixon",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "react-bootstrap": "^1.0.0-beta.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.22.12",
     "gatsby-image": "^2.2.34",
@@ -17,8 +16,11 @@
     "gatsby-source-datocms": "^2.2.4",
     "node-sass": "^4.12.0",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.6",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.1"
   },
   "keywords": [
