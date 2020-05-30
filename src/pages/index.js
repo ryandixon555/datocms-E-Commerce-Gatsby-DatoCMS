@@ -17,15 +17,11 @@ const Home = ({ data: { home } }) => (
     <h1 className="sheet__title">{home.contactEmail}</h1>
   </div>
 
-  <Carousel slide={true} controls={true} indicators={true} interval={2000}>
+  <Carousel slide={true} controls={true} indicators={true} interval={1500}>
     {home.gallery.map(({ fluid }) => (
       <Carousel.Item>
-      <img className="d-block w-100" alt={fluid.title} key={fluid.src} src={fluid.src} />
-        <Carousel.Caption>
-          <h3>{fluid.title}</h3>
-         
-        </Carousel.Caption>
-        </Carousel.Item>
+        <img className="carousel-styling" alt={fluid.title} key={fluid.src} src={fluid.src} />
+      </Carousel.Item>
     ))}
   </Carousel>
   
@@ -42,7 +38,7 @@ export const query = graphql`
       gallery {
         url
         title
-        fluid(maxWidth: 50, imgixParams: { fm: "jpg", auto: "compress" }) {
+        fluid(maxWidth: 20, imgixParams: { fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsSizes
           src
         }
