@@ -3,19 +3,20 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Layout from "../layouts/index"
 import Img from 'gatsby-image'
-
+import { GlobalBackground } from '../style/GlobalBackground'
 import MyNavBar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const About = ({ data: { about } }) => (
   <div>
    <MyNavBar />
-      <article className="sheet">
 
-      <div className="sheet__inner">
-        <h1 className="sheet__title">{about.headline}</h1>
-        <h1 className="sheet__title">{about.headlineDescription}</h1>
-      </div>
-    </article>
+   <GlobalBackground>
+      <h1 className="home__title">{about.headline}</h1>
+      <h1 className="home_intro__text">{about.headlineDescription}</h1>
+   </GlobalBackground>
+     
+  <Footer />
   </div>
 )
 

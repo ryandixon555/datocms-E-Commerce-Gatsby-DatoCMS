@@ -4,18 +4,19 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from "../layouts/index"
 import Img from 'gatsby-image'
 
+import { GlobalBackground } from '../style/GlobalBackground'
 import MyNavBar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Contact = ({ data: { contact } }) => (
     <div>
      <MyNavBar />
-        <article className="sheet">
-  
-        <div className="sheet__inner">
-          <h1 className="sheet__title">{contact.headline}</h1>
+    <GlobalBackground>
+    <h1 className="home__title">{contact.headline}</h1>
 
-        </div>
-      </article>
+    </GlobalBackground>
+  
+    <Footer />
     </div>
   )
   
