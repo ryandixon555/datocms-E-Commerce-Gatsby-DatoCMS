@@ -21,7 +21,7 @@ const Layout = ({ children, site }) => (
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">
-                🛍 MY CART 🛍
+                 My Cart
               </div>
               <div className="Header__summary__line">
                 Number of Items: <span className="snipcart-total-items"></span>
@@ -36,11 +36,6 @@ const Layout = ({ children, site }) => (
       
       <div className="Wrap" >
         {children}
-      </div>
-      <div className="Wrap" >
-        <div className="Footer">
-          Developed by <a href="www.ryandixonportfolio.com">Dixon Designs</a>.
-        </div>
       </div>
     </div>
   </div>
