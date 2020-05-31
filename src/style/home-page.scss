@@ -1,0 +1,43 @@
+.home__title {
+    position: relative;
+    margin: 20px;
+    font-size: 32px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 38px;
+    }
+}
+
+.home__contact {
+    position: relative;
+    margin: 20px;
+
+    font-size: 22px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.home_intro__text {
+    position: relative;
+    margin: 20px;
+
+    font-size: 22px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.home__footer__images {
+    position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+  }
+  
+  .home__footer__images img {
+    max-width: 250px;
+    margin: 20px;
+  }

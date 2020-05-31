@@ -13,3 +13,19 @@
     color: blue;
   }
 }
+
+.container__footer {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+  border-top: 5px solid black;
+  padding-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
