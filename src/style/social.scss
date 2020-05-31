@@ -1,0 +1,51 @@
+.container__footer {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.social {  
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 200px;
+}
+
+.social--facebook {
+  background-image: url('https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/facebook-f.svg');
+}
+
+.social--twitter {
+  background-image: url('https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/twitter.svg');
+}
+
+.social--instagram {
+  background-image: url('https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/instagram.svg');
+}
+
+.social--email {
+  background-image: url('https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/envelope.svg');
+}

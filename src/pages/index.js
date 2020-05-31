@@ -7,6 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Carousel from 'react-bootstrap/Carousel'
 import { Container, Row, Col } from 'react-bootstrap'
 import MyNavBar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Home = ({ data: { home } }) => (
   <div>
@@ -28,7 +29,7 @@ const Home = ({ data: { home } }) => (
               <Carousel slide={true} controls={true} indicators={true} interval={1500}>
                   {home.gallery.map(({ fluid }) => (
                     <Carousel.Item>
-                      <img  className="d-block w-100" alt={fluid.title} key={fluid.src} src={fluid.src} />
+                      <img className="d-block w-100" alt={fluid.title} key={fluid.src} src={fluid.src} />
                     </Carousel.Item>
                   ))}
                 </Carousel>
@@ -36,6 +37,8 @@ const Home = ({ data: { home } }) => (
         </Col>
       </Row>
     </Container>
+
+    <Footer />
   </div>
 )
 
