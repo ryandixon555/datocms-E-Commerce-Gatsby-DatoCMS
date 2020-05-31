@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from "../layouts/index"
 import Img from 'gatsby-image'
 import { GlobalBackground } from '../style/GlobalBackground'
-import MyNavBar from '../components/Navbar'
+import MyNavBar from '../components/MyNavbar'
 import Footer from '../components/Footer'
 
 const About = ({ data: { about } }) => (

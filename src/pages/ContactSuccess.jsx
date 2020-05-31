@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 
-import MyNavBar from '../components/NavBar'
+import MyNavBar from '../components/MyNavBar'
 import styled from 'styled-components'
 
 import { GlobalBackground } from '../style/GlobalBackground'

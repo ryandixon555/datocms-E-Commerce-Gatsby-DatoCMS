@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from "../layouts/index"
 import Img from 'gatsby-image'
 
-import MyNavBar from '../components/Navbar'
+import MyNavBar from '../components/MyNavBar'
 
 export default () => (
   <StaticQuery

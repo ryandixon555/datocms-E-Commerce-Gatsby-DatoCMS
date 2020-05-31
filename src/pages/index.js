@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Carousel from 'react-bootstrap/Carousel'
 import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
-import MyNavBar from '../components/Navbar'
+import MyNavBar from '../components/MyNavBar'
 import Footer from '../components/Footer'
 
 const Home = ({ data: { home } }) => (

@@ -5,7 +5,7 @@ import Layout from "../layouts/index"
 import Img from 'gatsby-image'
 
 import { GlobalBackground } from '../style/GlobalBackground'
-import MyNavBar from '../components/Navbar'
+import MyNavBar from '../components/MyNavBar'
 import Footer from '../components/Footer'
 
 import { ContactForm } from '../components/ContactForm'
