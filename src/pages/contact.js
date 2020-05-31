@@ -8,24 +8,31 @@ import { GlobalBackground } from '../style/GlobalBackground'
 import MyNavBar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const Contact = ({ data: { contact } }) => (
-    <div>
-     <MyNavBar />
-    <GlobalBackground>
-    <h1 className="home__title">{contact.headline}</h1>
+import { ContactForm } from '../components/ContactForm'
 
+const Contact = ({ data: { contact } }) => (
+  <div>
+    <MyNavBar />
+
+    <GlobalBackground>
+      <h1 className="home__title">{contact.headline}</h1>
     </GlobalBackground>
-  
-    <Footer />
+
+    <div className = "contact">
+      <ContactForm />
     </div>
-  )
-  
-  export default Contact
-  
-  export const query = graphql`
-    query ContactQuery {
-      contact: datoCmsContact {
-        headline
-      }
+    
+
+    <Footer />
+  </div>
+)
+
+export const query = graphql`
+  query ContactQuery {
+    contact: datoCmsContact {
+      headline
     }
-  `
+  }
+`
+
+export default Contact;
